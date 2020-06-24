@@ -1,0 +1,150 @@
+body {
+  background-color: grey;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: grey;
+  color: hsl(229, 6%, 66%);
+}
+
+.round {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.padd {
+  padding: 6%;
+}
+
+.wt-700 {
+  font-weight: 700;
+}
+
+.size-15 {
+  font-size: 15px;
+}
+
+.move-right {
+  text-align: right;
+}
+
+.container {
+  width: 80%;
+  margin: 8% auto;
+}
+
+.shadow {
+  box-shadow: .3rem .3rem 5px #d9d9d9;
+}
+
+/* heading part */
+.header {
+  width: 60%;
+  margin: 0 auto 5%;
+  text-align: center;
+}
+
+.heading-1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.heading-2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.dark-grey {
+  color: grey;
+  color: hsl(234, 12%, 34%);
+}
+
+/* supervisor div */
+.supervisor-hr {
+  margin-top: 0;
+  border: solid 2px #549EF2;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* team-builder div */
+.team-builder-hr {
+  margin-top: 0;
+  border: solid 2px #E63950;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* karma */
+.karma-hr {
+  margin-top: 0;
+  border: solid 2px #FF9100;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* calculator */
+.calculator-hr {
+  margin-top: 0;
+  border: solid 2px #377FD2;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.parent {
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: ". second ."
+    "first second fourth"
+    "first third fourth"
+    ". third .";
+}
+
+@media (max-width:800px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "first""second""third""fourth";
+  }
+
+  .heading-1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .content {
+    font-size: 10px;
+  }
+
+  .heading-2 {
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 400;
+  }
+}
+
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
+
+.fourth {
+  grid-area: fourth;
+}
